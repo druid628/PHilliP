@@ -21,3 +21,6 @@ services:
   phillip.quit:
     class: phillipQuit
     file: "%SRC_DIR%/phillipQuit.php"
+  phillip.say:
+    class: phillipSay
+    file: "%SRC_DIR%/phillipSay.php"
