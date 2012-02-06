@@ -3,6 +3,8 @@ parameters:
   irc.realname: "Test jBot"
   irc.hostname: "chat.freenode.net"
   irc.port: 6667
+  users.trusted:
+    - f1gm3nt
 
 services:
   phillip.connect:

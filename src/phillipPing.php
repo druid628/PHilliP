@@ -53,7 +53,7 @@ class phillipPing {
     public function pong(sfEvent $event)
     {
         $p = $event->getParameters();
-        $this->sendCommand(sprintf('PONG :%s',$p['message']['trailing']));
+        $this->sendCommand(sprintf('PONG :%s',$p['trailing']));
     }
 
 }

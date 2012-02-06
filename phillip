@@ -176,7 +176,7 @@ class phillip {
 
             $eventName = sprintf('server.command.%s', strtoupper($message['command']));
             $this->log('Dispatching: ' . $eventName . ' RAW-> ' . $message['raw']);
-            $this->dispatcher->notify(new sfEvent(null, $eventName, array('message' => $message)));
+            $this->dispatcher->notify(new sfEvent($this, $eventName, $message));
         }
         while (true);
     }
